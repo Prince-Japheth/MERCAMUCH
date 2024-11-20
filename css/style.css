@@ -180,8 +180,10 @@
 
 @media (max-width: 991.98px) {
     .sticky-top.navbar-light {
-        position: relative;
-        background: var(--bs-white);
+        position: fixed;
+        background: rgba(255, 255, 255, 0.862);
+        backdrop-filter: blur(10px);
+        width: 100vw;
     }
 
     .navbar.navbar-expand-lg .navbar-toggler {
@@ -236,7 +238,7 @@
     
     .sticky-top.navbar-light {
         position: fixed;
-        background: #f8f8f84e;
+        background: rgba(255, 255, 255, 0.862);
         backdrop-filter: blur(10px);
     }
 /* 
