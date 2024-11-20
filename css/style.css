@@ -428,8 +428,11 @@
 }
 
 .service .service-item .service-img img {
+    height: 200px; /* Set your desired fixed height */
+    object-fit: cover; /* Ensures the aspect ratio is maintained */
     transition: 0.5s;
 }
+
 
 .service .service-item:hover .service-img img {
     transform: scale(1.2);
