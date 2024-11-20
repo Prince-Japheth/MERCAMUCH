@@ -1,4 +1,4 @@
-  =>  Template Name    : Stocker - Stock Market Website Template
+  =>  Template Name    : MercAmuc - Stock Market Website Template
 
   =>  Template Link    : https://htmlcodex.com/stock-market-website-template
 
