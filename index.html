@@ -441,6 +441,38 @@
       letter-spacing: 1.5px !important;
     }
 
+    /* Style FontAwesome icons inside the division card circles */
+    .projects2-thumb-info .plus-sing i {
+      font-size: 26px;
+      color: var(--ztc-bg-bg-10) !important;
+      display: inline-block !important;
+      line-height: 60px !important;
+      text-align: center !important;
+      width: 100%;
+      height: 100%;
+      transition: all 0.4s ease;
+    }
+    
+    .projects2-thumb-info:hover .plus-sing i {
+      transform: scale(1.15);
+      /* color: var(--ztc-bg-bg-9) !important; */
+    }
+
+    /* Style FontAwesome icons inside the services card icons */
+    .services2-box-icon i {
+      font-size: 32px;
+      color: var(--ztc-bg-bg-9) !important;
+      display: inline-block !important;
+      line-height: 60px !important;
+      text-align: center !important;
+      width: 100%;
+      height: 100%;
+      transition: all 0.4s ease;
+    }
+    .vl-services2-box:hover .services2-box-icon i {
+      transform: scale(1.15);
+    }
+
     /* Turn the offcanvas nav menu logo picture completely white */
     .vl-offcanvas-logo img {
       filter: brightness(0) invert(1) !important;
@@ -1064,7 +1096,7 @@
         <div class="col-xl-4 col-lg-6 col-md-6 d-flex" data-aos="zoom-out" data-aos-duration="900">
           <div class="vl-services2-box w-100">
             <div class="services2-box-icon">
-              <img src="assets/img/icon/services2-box1.svg" alt="">
+              <i class="fa-solid fa-globe"></i>
             </div>
             <div class="space24"></div>
             <div class="services2-box-content">
@@ -1096,7 +1128,7 @@
         <div class="col-xl-4 col-lg-6 col-md-6 d-flex" data-aos="zoom-out" data-aos-duration="1100">
           <div class="vl-services2-box mt-mobile-only w-100">
             <div class="services2-box-icon">
-              <img src="assets/img/icon/services2-box2.svg" alt="">
+              <i class="fa-solid fa-boxes-stacked"></i>
             </div>
             <div class="space24"></div>
             <div class="services2-box-content">
@@ -1153,7 +1185,7 @@
               <div class="projects2-thumb-info">
                 <img class="thumbimgs" src="assets/img/projects/project2(1).png" alt="" style="height: 480px;">
                 <div class="plus-sing">
-                  <img src="assets/img/icon/plus-sign.svg" alt="">
+                  <i class="fa-solid fa-cookie-bite"></i>
                 </div>
                 <div class="projects2-thumb-content">
                   <h3 class="title"><a href="#divisions">Confectionery</a></h3>
@@ -1180,7 +1212,7 @@
               <div class="projects2-thumb-info xs-mt20">
                 <img class="thumbimgs" src="assets/img/projects/project2(2).png" alt="" style="height: 480px;">
                 <div class="plus-sing">
-                  <img src="assets/img/icon/plus-sign.svg" alt="">
+                  <i class="fa-solid fa-glass-water"></i>
                 </div>
                 <div class="projects2-thumb-content">
                   <h3 class="title"><a href="#divisions">Beverages</a></h3>
@@ -1207,7 +1239,7 @@
               <div class="projects2-thumb-info mt-20_brk">
                 <img class="thumbimgs" src="assets/img/projects/project2(3).png" alt="" style="height: 480px;">
                 <div class="plus-sing">
-                  <img src="assets/img/icon/plus-sign.svg" alt="">
+                  <i class="fa-solid fa-tractor"></i>
                 </div>
                 <div class="projects2-thumb-content">
                   <h3 class="title"><a href="#divisions">Farming</a></h3>
@@ -1235,7 +1267,7 @@
               <div class="projects2-thumb-info">
                 <img class="thumbimgs animal-hus-img" src="assets/img/projects/project2(4).png" alt="">
                 <div class="plus-sing">
-                  <img src="assets/img/icon/plus-sign.svg" alt="">
+                  <i class="fa-solid fa-cow"></i>
                 </div>
                 <div class="projects2-thumb-content">
                   <h3 class="title"><a href="#divisions">Animal Husbandry</a></h3>
@@ -1262,8 +1294,8 @@
               <div class="projects2-thumb-info">
                 <img class="thumbimgs" src="assets/img/projects/project2(5).png" alt="">
                 <div class="plus-sing">
-                  <img src="assets/img/icon/plus-sign.svg" alt="">
-                </div>
+                  <i class="fa-solid fa-industry"></i>
+v                </div>
                 <div class="projects2-thumb-content">
                   <h3 class="title"><a href="#divisions">Manufacturing & Production</a></h3>
                   <div class="space24"></div>
