@@ -6,6 +6,62 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title> MercAmuc Investment Limited - Conglomerate </title>
 
+  <!-- SEO & Meta Tags -->
+  <meta name="description" content="MercAmuc Investment Limited is a premier conglomerate specializing in confectionery, beverages, import/export, general supply, farming, and animal husbandry. Partner with us for excellence.">
+  <meta name="keywords" content="MercAmuc, MercAmuc Investment Limited, Corporate Conglomerate, Confectionery, Beverages, Import Export, General Supply, Farming, Animal Husbandry, Investment">
+  <meta name="author" content="MercAmuc Investment Limited">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <link rel="canonical" href="https://mercamuc.com/">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://mercamuc.com/">
+  <meta property="og:title" content="MercAmuc Investment Limited | Premium Corporate Conglomerate">
+  <meta property="og:description" content="A leading conglomerate specializing in confectionery, beverages, import/export, general supply, farming, and animal husbandry.">
+  <meta property="og:image" content="https://mercamuc.com/assets/img/og-image.jpg">
+  <meta property="og:site_name" content="MercAmuc Investment Limited">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://mercamuc.com/">
+  <meta property="twitter:title" content="MercAmuc Investment Limited | Premium Corporate Conglomerate">
+  <meta property="twitter:description" content="A leading conglomerate specializing in confectionery, beverages, import/export, general supply, farming, and animal husbandry.">
+  <meta property="twitter:image" content="https://mercamuc.com/assets/img/og-image.jpg">
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Corporation",
+    "name": "MercAmuc Investment Limited",
+    "url": "https://mercamuc.com/",
+    "logo": "https://mercamuc.com/assets/img/logo/fav-logo1.png",
+    "description": "A premier conglomerate specializing in confectionery, beverages, import/export, general supply, farming, and animal husbandry.",
+    "contactPoint": [
+      {
+        "@type": "ContactPoint",
+        "telephone": "+234-803-211-5757",
+        "contactType": "customer service",
+        "email": "mercyogezi@yahoo.com",
+        "availableLanguage": "English"
+      },
+      {
+        "@type": "ContactPoint",
+        "telephone": "+234-911-016-1722",
+        "contactType": "customer service",
+        "email": "princejaphethjj@gmail.com",
+        "availableLanguage": "English"
+      }
+    ],
+    "sameAs": [
+      "https://facebook.com/mercamuc",
+      "https://twitter.com/mercamuc",
+      "https://linkedin.com/company/mercamuc",
+      "https://instagram.com/mercamuc"
+    ]
+  }
+  </script>
+
   <!--=====FAB ICON=======-->
   <link rel="shortcut icon" href="assets/img/logo/fav-logo1.png" type="image/x-icon">
 
@@ -55,6 +111,7 @@
       background: none !important;
       opacity: 0 !important;
     }
+
     .team-card .projects2-thumb-info .projects2-thumb-content {
       display: none !important;
     }
@@ -64,6 +121,7 @@
       padding: 14px 4px 4px;
       text-align: center;
     }
+
     .team-card-caption .team-name {
       font-family: var(--ztc-family-font2);
       font-size: 1.1rem;
@@ -71,14 +129,17 @@
       color: var(--ztc-text-text-5);
       margin: 0 0 4px;
     }
+
     .team-card-caption .team-name a {
       color: inherit;
       text-decoration: none;
       transition: color 0.2s ease;
     }
+
     .team-card-caption .team-name a:hover {
       color: var(--ztc-text-text-11);
     }
+
     .team-card-caption .team-role {
       font-family: var(--ztc-family-font1);
       font-size: 0.875rem;
@@ -97,6 +158,12 @@
     @media (min-width: 768px) and (max-width: 991px) {
       .animal-hus-img {
         height: 480px !important;
+      }
+
+      .animal-hus-col {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
       }
     }
 
@@ -138,6 +205,368 @@
       }
 
     }
+
+    /* Dynamic height synchronization for Story Section image column */
+    .vl-story-area .col-lg-6.d-flex {
+      display: flex !important;
+      flex-direction: column !important;
+    }
+
+    .vl-story-thumb {
+      height: 100% !important;
+      position: relative !important;
+      display: flex !important;
+      flex-direction: column !important;
+      flex-grow: 1 !important;
+    }
+
+    .vl-story-thumb img {
+      position: absolute !important;
+      top: 0 !important;
+      left: 0 !important;
+      width: 100% !important;
+      height: 100% !important;
+      object-fit: cover !important;
+      border-radius: 16px !important;
+    }
+
+    /* Premium text logo styling */
+    .logo-text {
+      font-family: var(--ztc-family-font2) !important;
+      font-size: 32px !important;
+      font-weight: 500 !important;
+      color: #1f684e !important;
+      letter-spacing: -0.5px !important;
+      text-transform: none !important;
+      text-decoration: none !important;
+      display: inline-block !important;
+    }
+
+    .logo-text.text-white {
+      color: #ffffff !important;
+    }
+
+    /* Mobile testimonial Swiper custom controls */
+    .mobile-testi-swiper {
+      padding-bottom: 50px !important;
+    }
+
+    .mobile-testi-pagination .swiper-pagination-bullet {
+      background: var(--ztc-text-text-5) !important;
+      opacity: 0.3 !important;
+    }
+
+    .mobile-testi-pagination .swiper-pagination-bullet-active {
+      background: var(--ztc-text-text-5) !important;
+      opacity: 1 !important;
+    }
+
+    .mobile-testi-pagination {
+      bottom: 12px !important;
+    }
+
+    .mobile-testi-prev {
+      top: auto !important;
+      bottom: 3px !important;
+      left: 28% !important;
+      transform: scale(0.55) !important;
+    }
+
+    .mobile-testi-next {
+      top: auto !important;
+      bottom: 3px !important;
+      right: 28% !important;
+      transform: scale(0.55) !important;
+    }
+
+    /* Hero section slides dynamic scaling to hide AI watermarks */
+    .hero2-slide-thumb {
+      overflow: hidden !important;
+    }
+
+    .hero2-slide-thumb img {
+      transform: scale(1.2) !important;
+      transform-origin: center center !important;
+      object-fit: cover !important;
+    }
+
+    /* Clean Alternating Background Pattern */
+    .vl-about2-area,
+    .vl-services2-area,
+    .vl-team2-area,
+    .vl-contact2-area {
+      background: transparent !important;
+      border-radius: 0px !important;
+      margin: 0px !important;
+    }
+
+    .vl-story-area,
+    .vl-projects2-area,
+    .vl-testimonial2-area,
+    .vl-blog2-area {
+      background: var(--ztc-bg-bg-11) !important;
+      /* Beautiful Light Sage Green #E1E9E2 */
+      border-radius: 16px !important;
+      margin: 0px 65px !important;
+      overflow: hidden !important;
+    }
+
+    @media (max-width: 991px) {
+
+      .vl-story-area,
+      .vl-projects2-area,
+      .vl-testimonial2-area,
+      .vl-blog2-area {
+        margin: 0px 30px !important;
+      }
+    }
+
+    @media (max-width: 575px) {
+
+      .vl-story-area,
+      .vl-projects2-area,
+      .vl-testimonial2-area,
+      .vl-blog2-area {
+        margin: 0px 10px !important;
+      }
+    }
+
+    /* Individual service cards custom background & hover states */
+    .vl-services2-box {
+      background-color: var(--ztc-bg-bg-11) !important;
+      transition: background-color 0.4s ease, color 0.4s ease !important;
+    }
+
+    .vl-services2-box:hover {
+      background-color: var(--ztc-bg-bg-10) !important;
+      /* Custom deep green hover state */
+    }
+
+    /* Force display:flex on logo container for correct horizontal alignment */
+    .logo-text.d-flex {
+      display: flex !important;
+      align-items: center !important;
+    }
+
+    /* Perfectly center all logo and brand widget elements in the footer */
+    .footer2-logo-area {
+      display: flex !important;
+      flex-direction: column !important;
+      align-items: center !important;
+      text-align: center !important;
+    }
+
+    /* Reduce the width of Services & About header descriptions for better wrapping */
+    @media (min-width: 576px) {
+      .vl-services2-header .vl-services2-topright,
+      .vl-about2-header .about2-header-right {
+        max-width: 450px !important;
+      }
+    }
+
+    /* Globally disable and visually deactivate all social links */
+    a:has(i.fa-brands),
+    a:has(i.fab),
+    .social_link a,
+    .footer2-widget-social a,
+    .social1-footer a {
+      pointer-events: none !important;
+      cursor: default !important;
+      opacity: 0.5 !important;
+    }
+
+    /* Mobile-only logo and toggler layout (widths < 768px): logo left, white text, hamburger right */
+    @media (max-width: 767px) {
+      .vl-logo .logo-text span {
+        color: #ffffff !important;
+      }
+      .vl-logo .logo-text {
+        color: #ffffff !important;
+        justify-content: flex-start !important;
+      }
+      .homepage2-body .vl-header-action-item {
+        float: none !important;
+      }
+    }
+
+    /* Tablet-only logo and toggler layout (widths 768px - 991px): logo centered, hamburger absolutely positioned on the right */
+    @media (min-width: 768px) and (max-width: 991px) {
+      .vl-logo .logo-text {
+        justify-content: center !important;
+      }
+      .vl-logo {
+        text-align: center !important;
+      }
+      .vl-header-content-area .row {
+        position: relative !important;
+      }
+      .homepage2-body .vl-header-action-item {
+        position: absolute !important;
+        right: 30px !important;
+        top: 50% !important;
+        transform: translateY(-50%) !important;
+        z-index: 10 !important;
+        float: none !important;
+      }
+    }
+
+    /* Style and color matching override for the offcanvas drawer menu */
+    .vl-offcanvas {
+      background-color: var(--ztc-bg-bg-10) !important;
+      border-left: 1px solid rgba(76, 174, 71, 0.2) !important;
+    }
+    .homepage2-body .vl-offcanvas-menu ul li a {
+      color: rgba(255, 255, 255, 0.85) !important;
+      transition: all 0.3s ease !important;
+    }
+    .homepage2-body .vl-offcanvas-menu ul li a:hover,
+    .homepage2-body .vl-offcanvas-menu ul li.active > a {
+      color: #e5c07b !important;
+    }
+    .vl-offcanvas-info span a,
+    .vl-offcanvas-social a {
+      color: rgba(255, 255, 255, 0.85) !important;
+      transition: color 0.3s ease !important;
+    }
+    .vl-offcanvas-info span a:hover,
+    .vl-offcanvas-social a:hover {
+      color: #e5c07b !important;
+    }
+    .vl-offcanvas-sm-title {
+      color: #ffffff !important;
+    }
+
+    /* Add letter spacing to brand text to prevent characters from touching */
+    .logo-text span {
+      letter-spacing: 1.5px !important;
+    }
+
+    /* Turn the offcanvas nav menu logo picture completely white */
+    .vl-offcanvas-logo img {
+      filter: brightness(0) invert(1) !important;
+    }
+
+    /* Darken the hero header logo on medium and PC views only */
+    @media (min-width: 768px) {
+      .homepage2-body .vl-logo a.logo-text {
+        filter: brightness(0.4) contrast(1.1) !important;
+      }
+    }
+
+    /* High-contrast dark green desktop horizontal navigation menu text colors */
+    .homepage2-body .vl-main-menu ul > li > a {
+      color: #132c12 !important;
+      transition: all 0.3s ease !important;
+    }
+    .homepage2-body .vl-main-menu ul > li:hover > a,
+    .homepage2-body .vl-main-menu ul > li a.nav-link.active {
+      color: #4cae47 !important;
+    }
+
+    /* Lock the header to a fixed position at the top of the viewport
+    .homepage2-body .vl-transparent-header {
+      position: fixed !important;
+      top: 0 !important;
+      left: 0 !important;
+      right: 0 !important;
+      z-index: 999999 !important;
+      transition: all 0.3s ease !important;
+      background-color: transparent !important;
+      border-bottom: none !important;
+    }
+
+    /* Apply brand green background and bottom border only when active scroll triggers .header-sticky */
+    .homepage2-body .header-sticky {
+      background-color: var(--ztc-bg-bg-10) !important;
+      background: var(--ztc-bg-bg-10) !important;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05) !important;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15) !important;
+      padding: 20px 0 !important; 
+    }
+
+    /* Override template default that hides the logo during scrolling states */
+    .homepage2-body .header-sticky .vl-logo {
+      display: block !important;
+    } */
+
+    .homepage2-body .vl-transparent-header .vl-main-menu ul > li > a {
+      color: rgba(255, 255, 255, 0.9) !important;
+    }
+    .homepage2-body .vl-transparent-header .vl-main-menu ul > li:hover > a,
+    .homepage2-body .vl-transparent-header .vl-main-menu ul > li a.nav-link.active {
+      color: #e5c07b !important; /* Soft gold accent for active desktop links */
+    }
+    .homepage2-body .vl-transparent-header .vl-offcanvas-toggle {
+      color: #ffffff !important;
+      border-color: rgba(255, 255, 255, 0.3) !important;
+    }
+
+    /* Guarantee perfect horizontal and vertical centering for contact box SVGs */
+    .contact2-mobile-logo {
+      display: inline-flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+    }
+
+    /* Top margin only on tablet/medium view for the second testimonial column */
+    @media (min-width: 768px) and (max-width: 1199px) {
+      .testimonial-tablet-mt {
+        margin-top: 30px !important;
+      }
+    }
+
+    /* Global styling for contact banner image zoom/scale to crop out AI watermarks */
+    .vl-contact2-banner {
+      overflow: hidden !important;
+      border-radius: 16px !important;
+    }
+    .vl-contact2-banner img {
+      transform: scale(1.18) !important;
+      transform-origin: center center !important;
+      object-fit: cover !important;
+      width: 100% !important;
+      height: 100% !important;
+    }
+
+    /* Side-by-side layout for contact details and banner image ONLY on tablet/medium view */
+    @media (min-width: 768px) and (max-width: 991px) {
+      .vl-contact2-info {
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: stretch !important;
+        gap: 30px !important;
+      }
+      .contact2-info-mobile {
+        flex: 1 1 50% !important;
+        margin-bottom: 0 !important;
+      }
+      .vl-contact2-banner {
+        flex: 1 1 50% !important;
+        margin-top: 0 !important;
+        display: flex !important;
+        flex-direction: column !important;
+        height: auto !important;
+      }
+    }
+
+    /* Synchronize and flex the contact banner height with the form column height on desktop */
+    @media (min-width: 992px) {
+      .vl-contact2-area .row {
+        display: flex !important;
+        align-items: stretch !important;
+      }
+      .vl-contact2-info {
+        display: flex !important;
+        flex-direction: column !important;
+        height: 100% !important;
+      }
+      .vl-contact2-banner {
+        flex: 1 1 auto !important;
+        display: flex !important;
+        flex-direction: column !important;
+        height: 100% !important;
+      }
+    }
   </style>
   <script>
     document.addEventListener("DOMContentLoaded", function () {
@@ -146,7 +575,49 @@
           slidesPerView: 1,
           spaceBetween: 15,
           loop: true,
-          autoplay: { delay: 3000, disableOnInteraction: false }
+          autoplay: { delay: 3000, disableOnInteraction: false },
+          pagination: {
+            el: ".mobile-testi-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".mobile-testi-next",
+            prevEl: ".mobile-testi-prev",
+          }
+        });
+      }
+
+      // AJAX form submission handler for Formspree
+      var contactForm = document.getElementById('contactForm');
+      if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+          e.preventDefault();
+          var form = this;
+          var successMsg = document.getElementById('success-message');
+          var submitBtn = document.querySelector('.vl-btnsub');
+          
+          if (submitBtn) submitBtn.disabled = true;
+          
+          fetch(form.action, {
+            method: 'POST',
+            body: new FormData(form),
+            headers: {
+              'Accept': 'application/json'
+            }
+          }).then(function(response) {
+            if (response.ok) {
+              if (successMsg) successMsg.style.display = 'block';
+              form.reset();
+              // Scroll nicely to success message
+              successMsg.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            } else {
+              alert('There was a problem sending your message. Please try again.');
+            }
+          }).catch(function(error) {
+            alert('There was a problem sending your message. Please try again.');
+          }).finally(function() {
+            if (submitBtn) submitBtn.disabled = false;
+          });
         });
       }
     });
@@ -176,16 +647,11 @@
 
   <!--=====HEADER START=======-->
   <header class="homepage2-body">
-    <div class="vl-header-area vl-transparent-header ">
+    <div class="vl-header-area vl-transparent-header">
       <div class="vl-header-content-area">
         <div class="container">
           <div class="row align-items-center">
-            <div class="col-xl-4 col-lg-4 col-md-2 col-6">
-              <!-- <div class="vl-header-action-item d-block d-lg-block">
-                <button type="button" class="vl-offcanvas-toggle">
-                  <i class="fa-solid fa-bars-staggered"></i>
-                </button>
-              </div> -->
+            <div class="col-xl-4 col-lg-4 d-none d-lg-block">
               <div class="vl-main-menu text-start home1_padding d-none">
                 <nav class="vl-mobile-menu-active">
                   <ul>
@@ -201,22 +667,22 @@
                 </nav>
               </div>
             </div>
-            <div class="col-xl-4 col-lg-4 col-md-8 col-6">
-              <div class="vl-logo text-center">
-                <a href="#hero"><img src="assets/img/logo/logo-hm2.png" alt=""></a>
+            <div class="col-xl-4 col-lg-4 col-md-12 col-8">
+              <div class="vl-logo text-start text-md-center text-lg-center">
+                <a href="#hero" class="logo-text d-flex align-items-center justify-content-start justify-content-md-center justify-content-lg-center gap-2">
+                  <img src="assets/img/logo/fav-logo1.png" alt="MercAmuc Investment Limited Logo" style="height: 45px; width: auto;">
+                  <span style="font-size: 35px; font-weight: 400;">MercAmuc</span>
+                </a>
               </div>
             </div>
-            <div class="col-xl-4 col-lg-4 col-md-4 col-6 d-none d-lg-block">
-              <div class="vl-menu-sidebar-area text-end">
-                <!-- <div class="sidebar-cart d-none d-xl-block">
-                  <img src="assets/img/icon/cart-icon-hm2.svg" alt="">
-                  <span><a href="index-2.html#">0</a></span>
-                </div> -->
-                <!-- <div class="menu-line"><svg xmlns="http://www.w3.org/2000/svg" width="1" height="25" viewBox="0 0 1 25"
-                    fill="none">
-                    <path d="M0.5 0.5L0.499999 24.5" stroke="#4CAE47" stroke-opacity="0.4" stroke-linecap="round" />
-                  </svg></div>
-                <div class="vl-header-btn d-none d-lg-block text-end">
+            <div class="col-xl-4 col-lg-4 col-md-12 col-4 text-end">
+              <div class="vl-menu-sidebar-area d-flex align-items-center justify-content-end gap-3">
+                <div class="vl-header-action-item">
+                  <button type="button" class="vl-offcanvas-toggle">
+                    <i class="fa-solid fa-bars-staggered"></i>
+                  </button>
+                </div>
+                <!-- <div class="vl-header-btn d-none d-lg-block">
                   <div class="btn_area3" data-aos="fade-left" data-aos-duration="900">
                     <a href="#contact" class="vl-btnhm2">Explore Our Services <span class="arrow_btn3"><svg
                           xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
@@ -228,8 +694,6 @@
                         </svg></span></a>
                   </div>
                 </div> -->
-
-
               </div>
             </div>
           </div>
@@ -245,7 +709,10 @@
       <div class="vl-offcanvas-wrapper">
         <div class="vl-offcanvas-header d-flex justify-content-between align-items-center mb-90">
           <div class="vl-offcanvas-logo">
-            <a href="#hero"><img src="assets/img/footer/footer1-logo.png" alt=""></a>
+            <a href="#hero" class="logo-text text-white d-flex align-items-center gap-2">
+              <img src="assets/img/logo/fav-logo1.png" alt="MercAmuc Investment Limited Logo" style="height: 32px; width: auto;">
+              <span>MercAmuc</span>
+            </a>
           </div>
           <div class="vl-offcanvas-close">
             <button class="vl-offcanvas-close-toggle"><i class="fa-solid fa-xmark"></i></button>
@@ -260,19 +727,19 @@
         <div class="vl-offcanvas-info">
           <h3 class="vl-offcanvas-sm-title">Contact Us</h3>
           <div class="space20"></div>
-          <span><a href="index-2.html#"> <i class="fa-regular fa-envelope"></i> cattlefarm@MercAmuc.com</a></span>
-          <span><a href="tel:8801712345678"><i class="fa-solid fa-phone"></i> +880 1712345678</a></span>
-          <span><a href="index-2.html#"><i class="fa-solid fa-location-dot"></i> Charabari, Shingra, Natore, Rajshahi ,
-              Bangladesh</a></span>
+          <span><a href="mailto:mercyogezi@yahoo.com"><i class="fa-regular fa-envelope"></i> mercyogezi@yahoo.com</a></span>
+          <span><a href="mailto:princejaphethjj@gmail.com"><i class="fa-regular fa-envelope"></i> princejaphethjj@gmail.com</a></span>
+          <span><a href="tel:+2348032115757"><i class="fa-solid fa-phone"></i> +234 803 211 5757</a></span>
+          <span><a href="tel:+2349110161722"><i class="fa-solid fa-phone"></i> +234 911 016 1722</a></span>
         </div>
         <div class="space20"></div>
         <div class="vl-offcanvas-social">
           <h3 class="vl-offcanvas-sm-title">Follow Us</h3>
           <div class="space20"></div>
-          <a href="index-2.html#"><i class="fab fa-facebook-f"></i></a>
-          <a href="index-2.html#"><i class="fab fa-twitter"></i></a>
-          <a href="index-2.html#"><i class="fab fa-linkedin-in"></i></a>
-          <a href="index-2.html#"><i class="fab fa-instagram"></i></a>
+          <a href="#contact"><i class="fab fa-facebook-f"></i></a>
+          <a href="#contact"><i class="fab fa-twitter"></i></a>
+          <a href="#contact"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#contact"><i class="fab fa-instagram"></i></a>
         </div>
 
       </div>
@@ -402,7 +869,12 @@
           <div class="about2-header-right">
             <div class="about2-meta" data-aos="fade-left" data-aos-duration="1000">
               <div class="about2-meta_user">
-                <a href="#contact"><img src="assets/img/about/about2-meta_user.png" alt=""></a>
+                <a href="#contact"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"
+                    fill="none">
+                    <path
+                      d="M18 7.16a.605.605 0 0 0-.19 0 2.573 2.573 0 0 1-2.48-2.58c0-1.43 1.15-2.58 2.58-2.58a2.58 2.58 0 0 1 2.58 2.58A2.589 2.589 0 0 1 18 7.16ZM16.97 14.44c1.37.23 2.88-.01 3.94-.72 1.41-.94 1.41-2.48 0-3.42-1.07-.71-2.6-.95-3.97-.71M5.97 7.16c.06-.01.13-.01.19 0a2.573 2.573 0 0 0 2.48-2.58C8.64 3.15 7.49 2 6.06 2a2.58 2.58 0 0 0-2.58 2.58c.01 1.4 1.11 2.53 2.49 2.58ZM7 14.44c-1.37.23-2.88-.01-3.94-.72-1.41-.94-1.41-2.48 0-3.42 1.07-.71 2.6-.95 3.97-.71M12 14.63a.605.605 0 0 0-.19 0 2.573 2.573 0 0 1-2.48-2.58c0-1.43 1.15-2.58 2.58-2.58a2.58 2.58 0 0 1 2.58 2.58c-.01 1.4-1.11 2.54-2.49 2.58ZM9.09 17.78c-1.41.94-1.41 2.48 0 3.42 1.6 1.07 4.22 1.07 5.82 0 1.41-.94 1.41-2.48 0-3.42-1.59-1.06-4.22-1.06-5.82 0Z"
+                      stroke="#132C12" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg></a>
               </div>
               <div class="about2-meta-line">
                 <img src="assets/img/icon/line.svg" alt="">
@@ -548,7 +1020,7 @@
             </div>
           </div>
         </div>
-        <div class="col-xl-6 col-lg-6 d-none d-lg-block">
+        <div class="col-xl-6 col-lg-6 d-none d-lg-block d-flex flex-column">
           <div class="vl-story-thumb mt-20_brk image-anime reveal">
             <img src="assets/img/other/story-thumb.png" alt="">
           </div>
@@ -615,8 +1087,10 @@
           </div>
         </div>
         <div class="col-xl-4 col-lg-4 col-md-6 d-none d-lg-block" style="position: relative;">
-          <div class="vl-services2-thumb image-anime reveal m-0 p-0" style="position: absolute; top: 0; bottom: 0; left: calc(var(--bs-gutter-x) * 0.5); right: calc(var(--bs-gutter-x) * 0.5);">
-            <img src="assets/img/service/services2-thumb.png" alt="" style="width: 100%; height: 100%; object-fit: cover; border-radius: 16px;">
+          <div class="vl-services2-thumb image-anime reveal m-0 p-0"
+            style="position: absolute; top: 0; bottom: 0; left: calc(var(--bs-gutter-x) * 0.5); right: calc(var(--bs-gutter-x) * 0.5);">
+            <img src="assets/img/service/services2-thumb.png" alt=""
+              style="width: 100%; height: 100%; object-fit: cover; border-radius: 16px;">
           </div>
         </div>
         <div class="col-xl-4 col-lg-6 col-md-6 d-flex" data-aos="zoom-out" data-aos-duration="1100">
@@ -757,7 +1231,7 @@
               </div>
             </div>
             <div class="space30 d-md-none d-lg-block"></div>
-            <div class="col-xl-6 col-lg-6 col-md-6" data-aos="zoom-out" data-aos-duration="900">
+            <div class="col-xl-6 col-lg-6 col-md-6 animal-hus-col" data-aos="zoom-out" data-aos-duration="900">
               <div class="projects2-thumb-info">
                 <img class="thumbimgs animal-hus-img" src="assets/img/projects/project2(4).png" alt="">
                 <div class="plus-sing">
@@ -904,7 +1378,7 @@
           </div>
         </div>
         <div class="space44"></div>
-        <div class="col-xl-4 col-lg-12 d-none d-lg-block">
+        <div class="col-xl-4 col-lg-12 d-none d-md-block mt-0 mt-md-2 mt-lg-0">
           <div class="row">
             <div class="col-xl-12 col-lg-6 col-md-6" data-aos="fade-right" data-aos-duration="1100">
               <div class="testimonial2-info">
@@ -962,12 +1436,14 @@
             </div>
           </div>
         </div>
-        <div class="col-xl-4 col-lg-6 mx-auto d-none d-lg-block" style="position: relative;">
-          <div class="testimonial2-thumb reveal image-anime m-0 p-0" style="position: absolute; top: 0; bottom: 0; left: calc(var(--bs-gutter-x) * 0.5); right: calc(var(--bs-gutter-x) * 0.5);">
-            <img src="assets/img/testimonil/testimonial2_thumb.png" alt="" style="width: 100%; height: 100%; object-fit: cover; border-radius: 16px;">
+        <div class="col-xl-4 col-lg-6 mx-auto d-none d-md-block" style="position: relative;">
+          <div class="testimonial2-thumb reveal image-anime m-0 p-0"
+            style="position: absolute; top: 0; bottom: 0; left: calc(var(--bs-gutter-x) * 0.5); right: calc(var(--bs-gutter-x) * 0.5);">
+            <img src="assets/img/testimonil/testimonial2_thumb.png" alt=""
+              style="width: 100%; height: 100%; object-fit: cover; border-radius: 16px;">
           </div>
         </div>
-        <div class="col-xl-4 col-lg-12 d-none d-lg-block">
+        <div class="col-xl-4 col-lg-12 d-none d-md-block mt-0 mt-md-3 mt-lg-0">
           <div class="row">
             <div class="col-xl-12 col-lg-6 col-md-6" data-aos="fade-left" data-aos-duration="1100">
               <div class="testimonial2-info">
@@ -1026,7 +1502,7 @@
           </div>
         </div>
         <div class="col-12 d-block d-md-none">
-          <div class="swiper mobile-testi-swiper" style="overflow: hidden; padding-bottom: 20px;">
+          <div class="swiper mobile-testi-swiper" style="overflow: hidden; padding-bottom: 40px; position: relative;">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <div class="testimonial2-info">
@@ -1137,12 +1613,18 @@
                 </div>
               </div>
             </div>
+            <!-- Carousel controls for mobile view -->
+            <div class="swiper-pagination mobile-testi-pagination"></div>
+            <div class="swiper-button-prev mobile-testi-prev" style="color: var(--ztc-text-text-5);"></div>
+            <div class="swiper-button-next mobile-testi-next" style="color: var(--ztc-text-text-5);"></div>
           </div>
         </div>
       </div>
     </div>
   </div>
   <!--===== TESTIMONIAL AREA ENDS =======-->
+
+  <div class="space100"></div>
 
 
 
@@ -1169,10 +1651,10 @@
       </div>
       <div class="space44"></div>
       <div class="row">
-        <div class="col-xl-6 col-lg-6 col-md-6">
+        <div class="col-xl-6 col-lg-6 col-md-12">
           <div class="vl-contact2-info">
             <div class="contact2-info-mobile" data-aos="zoom-in" data-aos-duration="1000">
-              <div class="contact2-mobile-content md-mb20 xs-mb20">
+              <!-- <div class="contact2-mobile-content md-mb20 xs-mb20">
                 <div class="contact2-mobile-logo">
                   <a href="#contact"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"
                       fill="none">
@@ -1192,7 +1674,7 @@
                     <li><a href="#contact">Island City, NY 11101</a></li>
                   </ul>
                 </div>
-              </div>
+              </div> -->
               <div class="contact2-mobile-content mt-16 md-mb20 xs-mb20">
                 <div class="contact2-mobile-logo">
                   <a href="#contact"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"
@@ -1212,28 +1694,24 @@
                   <h3><a href="#contact">Email Us</a></h3>
                   <div class="space16"></div>
                   <ul>
-                    <li><a href="#contact">info@mercamuc.com</a></li>
-                    <li><a href="#contact">support@mercamuc.com</a></li>
+                    <li><a href="mailto:mercyogezi@yahoo.com">mercyogezi@yahoo.com</a></li>
+                    <li><a href="mailto:princejaphethjj@gmail.com">princejaphethjj@gmail.com</a></li>
                   </ul>
                 </div>
               </div>
               <div class="contact2-mobile-content mt-16">
                 <div class="contact2-mobile-logo">
-                  <a href="#contact"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"
-                      fill="none">
-                      <path d="M18.666 4V8M25.3327 6.66667L22.666 9.33333M27.9993 13.3333H23.9993" stroke="white"
-                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                      <path
-                        d="M12.211 7.61631L11.6741 6.40833C11.3231 5.61851 11.1476 5.22357 10.8851 4.92135C10.5561 4.54259 10.1273 4.26392 9.64756 4.11713C9.26477 4 8.83261 4 7.96828 4C6.70388 4 6.07167 4 5.54097 4.24305C4.91583 4.52936 4.35124 5.15104 4.12631 5.8008C3.93535 6.35239 3.99004 6.91924 4.09944 8.05293C5.26388 20.1203 11.8797 26.7361 23.9471 27.9005C25.0808 28.01 25.6476 28.0647 26.1992 27.8737C26.8489 27.6488 27.4707 27.0841 27.7569 26.4591C28 25.9283 28 25.2961 28 24.0317C28 23.1673 28 22.7352 27.8829 22.3524C27.7361 21.8727 27.4575 21.4439 27.0787 21.1149C26.7764 20.8524 26.3815 20.6769 25.5916 20.3259L24.3837 19.7889C23.5283 19.4088 23.1007 19.2188 22.666 19.1775C22.2501 19.1379 21.8308 19.1963 21.4415 19.3479C21.0347 19.5063 20.6751 19.8059 19.956 20.4051C19.2401 21.0016 18.8823 21.2999 18.4449 21.4596C18.0573 21.6012 17.5448 21.6537 17.1364 21.5935C16.6759 21.5256 16.3231 21.3372 15.6177 20.9601C13.4229 19.7873 12.2127 18.5771 11.0398 16.3823C10.6629 15.6769 10.4744 15.3241 10.4065 14.8636C10.3463 14.4552 10.3988 13.9427 10.5404 13.5551C10.7002 13.1177 10.9984 12.7598 11.5949 12.044C12.1942 11.3249 12.4938 10.9654 12.6522 10.5585C12.8038 10.1693 12.8621 9.74987 12.8226 9.33397C12.7813 8.89936 12.5912 8.47168 12.211 7.61631Z"
-                        stroke="white" stroke-width="1.5" stroke-linecap="round" />
+                  <a href="#contact"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"
+                      fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
                     </svg></a>
                 </div>
                 <div class="contact2-mobile-text">
                   <h3><a href="#contact">Phone</a></h3>
                   <div class="space16"></div>
                   <ul>
-                    <li><a href="tel: ">(813) 752-5611</a></li>
-                    <li><a href="tel:(830)556-6651">(830) 556-6651</a></li>
+                    <li><a href="tel:+2348032115757">+234 803 211 5757</a></li>
+                    <li><a href="tel:+2349110161722">+234 911 016 1722</a></li>
                   </ul>
                 </div>
               </div>
@@ -1243,7 +1721,7 @@
             </div>
           </div>
         </div>
-        <div class="col-xl-6 col-lg-6 col-md-6" data-aos="zoom-in" data-aos-duration="1100">
+        <div class="col-xl-6 col-lg-6 col-md-12 mt-4 mt-lg-0" data-aos="zoom-in" data-aos-duration="1100">
           <div class="contact2-form-area xs-mt20">
             <h2 class="title">Get In Touch With Us</h2>
             <div class="space16"></div>
@@ -1252,32 +1730,24 @@
               is always
               here to help.</p>
             <div class="space32"></div>
-            <form action="index-2.html#">
+            <div id="success-message" class="alert alert-success messenger-box-contact__msg" style="display: none; background-color: #e1e9e2; color: #023118; border: 1px solid #1f684e; padding: 15px; border-radius: 8px; margin-bottom: 20px;" role="alert">
+              Your message was sent successfully.
+            </div>
+            <form action="https://formspree.io/f/mqakppnn" method="POST" id="contactForm">
               <div class="row">
                 <div class="col-xl-6 col-lg-6">
-                  <input type="text" placeholder="Name">
+                  <input type="text" name="name" placeholder="Name" required>
                 </div>
                 <div class="col-xl-6 col-lg-6 mt-20_brk">
-                  <input type="text" placeholder="Email">
+                  <input type="email" name="_replyto" placeholder="Email" required>
                 </div>
                 <div class="space24"></div>
-                <div class="col-xl-6 col-lg-6">
-                  <input type="text" placeholder="Phone">
-                </div>
-                <div class="col-xl-6 col-lg-6 mt-20_brk">
-                  <div class="form1-select">
-                    <select class="wide">
-                      <option data-display="Your Need Suport?">Nothing</option>
-                      <option value="1">Some option</option>
-                      <option value="2">Another option</option>
-                      <option value="3" disabled>A disabled option</option>
-                      <option value="4">Potato</option>
-                    </select>
-                  </div>
+                <div class="col-xl-12 col-lg-12">
+                  <input type="text" name="phone" placeholder="Phone">
                 </div>
                 <div class="space24"></div>
                 <div class="col-xl-12">
-                  <textarea name="message" id="message" placeholder="Type your message...."></textarea>
+                  <textarea name="message" id="message" placeholder="Type your message...." required></textarea>
                 </div>
               </div>
             </form>
@@ -1285,7 +1755,7 @@
             <div class="contact2-form-bottom">
               <h3 class="md-mb20 xs-mb20"><img src="assets/img/icon/tick-hm2.svg" alt="">Excellence In Every Division
               </h3>
-              <button type="submit" class="vl-btnsub">Submit<span class="arrow_btnsub"><svg
+              <button type="submit" form="contactForm" class="vl-btnsub">Submit<span class="arrow_btnsub"><svg
                     xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
                     <path d="M27.002 16.002H5.00195" stroke="#132C12" stroke-width="2" stroke-linecap="round"
                       stroke-linejoin="round"></path>
@@ -1506,7 +1976,11 @@
             </div>
             <div class="col-xl-4 col-lg-6 col-md-6">
               <div class="footer2-logo-area">
-                <img src="assets/img/footer/footer1-logo.png" alt="">
+                <a href="#hero" class="logo-text text-white d-flex align-items-center justify-content-center gap-2">
+                  <img src="assets/img/logo/preloader.png" alt=""
+                    style="height: 42px; width: auto; object-fit: contain;">
+                  <span>MercAmuc</span>
+                </a>
                 <div class="space28"></div>
                 <p class="pera_text">MercAmuc Investment Limited is dedicated to offering premium goods and services
                   across confectionery, farming, and general supply with unwavering reliability.</p>
@@ -1529,7 +2003,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-xl-4 col-lg-12">
+            <div class="col-xl-4 col-lg-12 d-none d-lg-block">
               <div class="row footer2-widget-info">
                 <div class="col-xl-4 col-lg-2 col-md-3">
                   <div class="footer-widget-area">

@@ -91,6 +91,12 @@ function initOffcanvasMenu() {
     $(".vl-offcanvas").removeClass("vl-offcanvas-open");
     $(".vl-offcanvas-overlay").removeClass("vl-offcanvas-overlay-open");
   });
+
+  // Close offcanvas when any link inside is clicked
+  $(".vl-offcanvas a").on('click', function () {
+    $(".vl-offcanvas").removeClass("vl-offcanvas-open");
+    $(".vl-offcanvas-overlay").removeClass("vl-offcanvas-overlay-open");
+  });
 }
 
 initOffcanvasMenu();
@@ -151,9 +157,20 @@ function activateTab(tab, isManual = false) {
     }
   });
 
-  // Center the tab in the scrollable view on mobile, but ONLY if clicked manually
-  if (isManual) {
-    tab.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+  // Center the tab in the scrollable tabs container (NOT the whole page)
+  const activeIndex = Array.from(tabs).indexOf(tab);
+  if (isManual || activeIndex === 0 || activeIndex >= tabs.length - 2) {
+    const tabsContainer = document.querySelector(".timeline-tabs");
+    if (tabsContainer) {
+      const containerWidth = tabsContainer.clientWidth;
+      const tabLeft = tab.offsetLeft;
+      const tabWidth = tab.clientWidth;
+      const scrollTarget = tabLeft - (containerWidth / 2) + (tabWidth / 2);
+      tabsContainer.scrollTo({
+        left: scrollTarget,
+        behavior: 'smooth'
+      });
+    }
   }
 }
 
@@ -178,6 +195,42 @@ tabs.forEach(tab => {
 
 if (tabs.length > 0) {
   startTabAutoplay();
+}
+
+// Swipe support for Story Section timeline
+const timelineContent = document.querySelector(".timeline-content");
+if (timelineContent && tabs.length > 0) {
+  let touchStartX = 0;
+  let touchEndX = 0;
+
+  timelineContent.addEventListener("touchstart", (e) => {
+    touchStartX = e.changedTouches[0].screenX;
+  }, { passive: true });
+
+  timelineContent.addEventListener("touchend", (e) => {
+    touchEndX = e.changedTouches[0].screenX;
+    handleSwipeGesture();
+  }, { passive: true });
+
+  function handleSwipeGesture() {
+    const swipeThreshold = 50; // minimum distance in px
+    const diffX = touchEndX - touchStartX;
+
+    if (Math.abs(diffX) > swipeThreshold) {
+      let activeIndex = Array.from(tabs).findIndex(t => t.classList.contains("active"));
+      if (diffX < 0) {
+        // Swiped left -> Go to next tab
+        let nextIndex = (activeIndex + 1) % tabs.length;
+        activateTab(tabs[nextIndex], true);
+        startTabAutoplay();
+      } else {
+        // Swiped right -> Go to previous tab
+        let prevIndex = (activeIndex - 1 + tabs.length) % tabs.length;
+        activateTab(tabs[prevIndex], true);
+        startTabAutoplay();
+      }
+    }
+  }
 }
 
 
