@@ -295,7 +295,7 @@
 
     @media (max-width: 575px) {
       .hero2-slide-thumb img {
-        height: 80vh !important;
+        height: 70vh !important;
         aspect-ratio: auto !important;
       }
     }
@@ -303,6 +303,10 @@
     #loading-icon img {
       max-width: 100%;
       object-fit: contain;
+    }
+
+    .preloader {
+      overflow: hidden !important;
     }
 
     /* Clean Alternating Background Pattern */
@@ -677,7 +681,7 @@
   <div class="preloader">
     <div class="loading-container">
       <div class="loading"></div>
-      <div id="loading-icon"><img src="assets/img/logo/fav-logo1mobile.png" alt="" style="filter: brightness(0) invert(1);"></div>
+      <div id="loading-icon"><img src="assets/img/logo/fav-logo1mobile.png" alt="" style="filter: brightness(0) invert(1); width: 100%; max-width: 80px; height: auto; display: block; margin: 0 auto;"></div>
     </div>
   </div>
   <!--===== PRELODER ENDS=======-->
