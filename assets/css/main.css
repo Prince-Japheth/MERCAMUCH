@@ -503,7 +503,7 @@ img {
   --ztc-bg-bg-1: #fff;
   --ztc-bg-bg-2: #1C293F;
   --ztc-bg-bg-3: #FEF8E0;
-  --ztc-bg-bg-4: #1f3f68;
+  --ztc-bg-bg-4: #1f2668;
   --ztc-bg-bg-5: #FFD322;
   --ztc-bg-bg-6: #4CAE47;
   --ztc-bg-bg-7: #F2F6F4;
@@ -2962,7 +2962,7 @@ only screen and (min-width: 768px) and (max-width: 991px),
   margin-top: -12px;
   width: 30px;
   height: 30px;
-  border: 1px solid #1A5632;
+  border: 1px solid #1a2556;
   background-color: transparent;
   box-sizing: border-box;
   z-index: 10000000;
@@ -2972,7 +2972,7 @@ only screen and (min-width: 768px) and (max-width: 991px),
 
 .cursor-outer.color-4 {
   border: 1px solid red;
-  background-color: green;
+  background-color: rgb(0, 19, 128);
 }
 
 .cursor-outer.cursor-hover {
@@ -3009,7 +3009,7 @@ only screen and (min-width: 768px) and (max-width: 991px),
   width: 10px;
   height: 10px;
   z-index: 10000001;
-  background-color: #1A5632;
+  background-color: #1a2556;
   opacity: 1;
   transition: all 0.24s ease-out 0s;
 }
