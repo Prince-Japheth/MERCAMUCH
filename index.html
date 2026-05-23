@@ -286,10 +286,23 @@
 
     .hero2-slide-thumb img {
       width: 100% !important;
-      height: 100vh !important;
+      height: 100% !important;
+      aspect-ratio: 1024 / 559 !important;
       object-fit: cover !important;
       transform: scale(1.2) !important;
       transform-origin: center center !important;
+    }
+
+    @media (max-width: 575px) {
+      .hero2-slide-thumb img {
+        height: 80vh !important;
+        aspect-ratio: auto !important;
+      }
+    }
+
+    #loading-icon img {
+      max-width: 100%;
+      object-fit: contain;
     }
 
     /* Clean Alternating Background Pattern */
