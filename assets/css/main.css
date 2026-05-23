@@ -10098,7 +10098,7 @@ only screen and (min-width: 768px) and (max-width: 991px),
 
 .homepage2-body .vl-offcanvas .vl-offcanvas-logo {
   height: 50px;
-  width: 164px;
+  width: fit-content;
   -o-object-fit: contain;
   object-fit: contain;
 }
