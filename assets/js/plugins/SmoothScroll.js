@@ -784,3 +784,7 @@
         });
     else if ('object' == typeof exports)
         module.exports = SmoothScroll;
+    else
+        window.SmoothScroll = SmoothScroll;
+    
+    })();
